@@ -113,7 +113,7 @@ h3.title {
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     body {
         height: 100vh;
         overflow-y: scroll;
@@ -123,8 +123,7 @@ h3.title {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 40px;
-
+        font-size: 36px;
     }
 
     #what_we_do {
