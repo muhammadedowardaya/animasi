@@ -50,7 +50,7 @@ function callMenu() {
         e.preventDefault();
         $(this).parent("li").addClass("active").siblings().removeClass("active");
         var hrefString = $(this).attr("href");
-        $("#" + hrefString).css("display", "flex");
+        $("#" + hrefString).addClass("flex").siblings().removeClass("flex");
         window[hrefString]();
     })
 
@@ -60,15 +60,21 @@ function callMenu() {
 function what_we_do() {
 
     $("#main #what_we_do section.gambar").velocity("transition.flipYIn", {
-        duration: 2000,
+        duration: 3000,
     })
     $("#main #what_we_do div .title").velocity("transition.slideUpIn", {
-        duration: 2500
+        duration: 3000
     })
 
     $("#main #what_we_do div").velocity("transition.slideDownIn", {
-        duration: 2700
+        duration: 3000
     })
+}
+
+function our_team() {
+    $("#our_team").velocity("transition.flipYIn", {
+        duration: 5000
+    });
 }
 
 function tampilScroll() {
