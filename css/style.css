@@ -125,7 +125,7 @@ h3.title {
     align-items: center;
 }
 
-@media (max-width: 343px) {
+@media (max-width: 460px) {
     body {
         /* height: 100vh; */
         overflow: scroll;
