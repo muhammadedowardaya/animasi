@@ -115,15 +115,13 @@ h3.title {
 
 @media (max-width: 425px) {
     body {
-        height: 100vh;
-        overflow-y: scroll;
+        /* height: 100vh; */
+        overflow: scroll;
     }
 
     .intro #text pre {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 36px;
+        font-size: 30px;
     }
 
     #what_we_do {
@@ -133,7 +131,7 @@ h3.title {
     }
 
     #what_we_do section.gambar {
-        width: 455px !important;
+        width: 400px !important;
         margin-bottom: 30px;
     }
 
@@ -142,7 +140,7 @@ h3.title {
     }
 
     #what_we_do div {
-        width: 450px;
+        width: 400px;
         margin-bottom: 100px;
         margin-right: 0;
         text-align: justify;

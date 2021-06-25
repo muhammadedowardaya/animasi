@@ -53,18 +53,29 @@ function callMenu() {
         $("#" + hrefString).css("display", "flex");
         window[hrefString]();
     })
+
+
 }
 
 function what_we_do() {
+
     $("#main #what_we_do section.gambar").velocity("transition.flipYIn", {
-        duration: 1700
+        duration: 2000,
     })
-    $("#main #what_we_do .title").velocity("transition.slideUpIn", {
-        duration: 1700
+    $("#main #what_we_do div .title").velocity("transition.slideUpIn", {
+        duration: 2500
     })
+
     $("#main #what_we_do div").velocity("transition.slideDownIn", {
-        duration: 1700
+        duration: 2700
     })
+}
+
+function tampilScroll() {
+    $(window).scroll(function () {
+        let wScroll = $(this).scrollTop();
+        console.log(wScroll);
+    });
 }
 
 $(document).ready(function () {
