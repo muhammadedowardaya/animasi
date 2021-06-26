@@ -50,7 +50,10 @@ function callMenu() {
         e.preventDefault();
         $(this).parent("li").addClass("active").siblings().removeClass("active");
         var hrefString = $(this).attr("href");
-        $("#" + hrefString).addClass("flex").siblings().removeClass("flex");
+        $(".container-content").css("display", "none");
+        document.querySelector("#" + hrefString).style.display = "flex";
+        // document.querySelector("#" + hrefString).nextElementSibling.classList.remove("flex");
+        // document.querySelector("#" + hrefString).previousElementSibling.classList.remove("flex");
         window[hrefString]();
     })
 
@@ -90,3 +93,6 @@ $(document).ready(function () {
     nama.innerHTML = huruf;
     animasiIntro();
 });
+
+document.querySelector("#" + hrefString).nextElementSibling.style.display = "none";
+document.querySelector("#" + hrefString).nextElementSibling.style.display = "none";

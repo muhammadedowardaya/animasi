@@ -118,14 +118,14 @@ h3.title {
 }
 
 #our_team {
-    font-size: 37px;
+    font-size: 40px;
     font-family: OpenSans-ExtraBold;
     display: none;
     justify-content: center;
     align-items: center;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     body {
         /* height: 100vh; */
         overflow: scroll;
@@ -133,7 +133,7 @@ h3.title {
 
     .intro #text pre {
         display: flex;
-        font-size: 37px;
+        font-size: 30px;
     }
 
     #what_we_do {
